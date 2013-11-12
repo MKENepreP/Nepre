@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>162C624C-9C41-4BA6-A103-8DC867D371B9</string>
+	<string>A16610C5-6B9B-4DB2-847D-B226D09496B2</string>
 	<key>IDESourceControlProjectName</key>
 	<string>NepreP</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>FD85EC28-5895-4614-90D8-E65486089297</key>
-		<string>https://github.com/lsr90518/NepreTest.git</string>
+		<key>3EAA63D3-1921-416F-8524-A2E210C70EE0</key>
+		<string>https://github.com/MKENepreP/Nepre.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>NepreP.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>FD85EC28-5895-4614-90D8-E65486089297</key>
+		<key>3EAA63D3-1921-416F-8524-A2E210C70EE0</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/lsr90518/NepreTest.git</string>
+	<string>https://github.com/MKENepreP/Nepre.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>FD85EC28-5895-4614-90D8-E65486089297</string>
+	<string>3EAA63D3-1921-416F-8524-A2E210C70EE0</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>FD85EC28-5895-4614-90D8-E65486089297</string>
+			<string>3EAA63D3-1921-416F-8524-A2E210C70EE0</string>
 			<key>IDESourceControlWCCName</key>
-			<string>NepreTest</string>
+			<string>Nepre</string>
 		</dict>
 	</array>
 </dict>
