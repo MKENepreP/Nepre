@@ -43,6 +43,7 @@
 {
 	self = [super initWithFrontViewController:aFrontViewController rearViewController:aBackViewController];
 	
+    
 	if (nil != self)
 	{
 		self.delegate = self;

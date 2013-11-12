@@ -1,25 +1,21 @@
 //
-//  FoodViewController.m
+//  SpotViewController.m
 //  NepreP
 //
 //  Created by Lsr on 13-11-12.
 //  Copyright (c) 2013年 Lsr. All rights reserved.
 //
 
-#import "FoodViewController.h"
 #import "SpotViewController.h"
-#import "UINavigationBar+MyNavigationBar.h"
+#import "TimelineViewController.h"
 
-@interface FoodViewController ()
+@interface SpotViewController ()
 
-// Private Properties:
 @property (retain, nonatomic) UIPanGestureRecognizer *navigationBarPanGestureRecognizer;
 
 @end
 
-@implementation FoodViewController
-
-@synthesize navigationBarPanGestureRecognizer = _navigationBarPanGestureRecognizer;
+@implementation SpotViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,7 +30,7 @@
 {
 	[super viewWillAppear:animated];
 	
-    UIColor *foodColor = [[UIColor alloc]initWithRed:69.0f/255.0f green:3.0f/255.0f blue:7.0f/255.0f alpha:1.0f];
+    UIColor *spotColor = [[UIColor alloc]initWithRed:0.0f/255.0f green:49.0f/255.0f blue:71.0f/255.0f alpha:1.0f];
     
     
     
@@ -54,21 +50,16 @@
 		if (![self.navigationItem leftBarButtonItem])
 		{
 			// If not, allocate one and add it.
-            
-            UIImage *menuImage = [UIImage imageNamed:@"menuLine"];
-            
 			UIBarButtonItem *revealButton = [[UIBarButtonItem alloc]
-                                             initWithImage:menuImage style:UIBarButtonItemStyleBordered target:self.navigationController.parentViewController action:@selector(revealToggle:)];
-//                                             initWithTitle:NSLocalizedString(@"三", @"三")
-//                                             style:UIBarButtonItemStylePlain
-//                                             target:self.navigationController.parentViewController
-//                                             action:@selector(revealToggle:)];
+                                             initWithTitle:NSLocalizedString(@"三", @"三")
+                                             style:UIBarButtonItemStylePlain
+                                             target:self.navigationController.parentViewController
+                                             action:@selector(revealToggle:)];
             
 			
             self.navigationItem.leftBarButtonItem = revealButton;
 		}
-        self.navigationController.navigationBar.barTintColor = foodColor;
-        self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+        self.navigationController.navigationBar.barTintColor = spotColor;
 	}
 }
 - (IBAction)OpenAccount:(id)sender {
@@ -83,7 +74,7 @@
 
 - (void)pushExample
 {
-	SpotViewController *stubController = [[SpotViewController alloc] init];
+	TimelineViewController *stubController = [[TimelineViewController alloc] init];
 	[self.navigationController pushViewController:stubController animated:YES];
 }
 

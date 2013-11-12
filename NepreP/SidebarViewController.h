@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SidebarViewController : UIViewController
+@interface SidebarViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+// Public Properties:
+@property (nonatomic, retain) IBOutlet UITableView *rearTableView;
+
+// Public Methods:
 
 @end
