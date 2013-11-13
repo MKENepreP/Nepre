@@ -58,6 +58,9 @@
                     <state key="normal" backgroundImage="likeStar.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="goLike:" destination="-1" eventType="touchUpInside" id="pIc-RT-FDp"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmq-De-6Ts">
                     <rect key="frame" x="7" y="531" width="46" height="30"/>
@@ -74,6 +77,9 @@
                     <state key="normal" backgroundImage="wentHouse.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="goHome:" destination="-1" eventType="touchUpInside" id="Bol-SV-8eZ"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nmy-ik-vwa">
                     <rect key="frame" x="20" y="220" width="20" height="20"/>
@@ -81,6 +87,9 @@
                     <state key="normal" backgroundImage="searchMagnifier.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="goSearch:" destination="-1" eventType="touchUpInside" id="jLY-fA-9Gl"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBp-EU-mPV">
                     <rect key="frame" x="15" y="134" width="30" height="30"/>
@@ -88,6 +97,9 @@
                     <state key="normal" backgroundImage="friendsPeople.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="seeFriends:" destination="-1" eventType="touchUpInside" id="9xJ-IW-lel"/>
+                    </connections>
                 </button>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Songran" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kM9-tg-Fxz">
                     <rect key="frame" x="7" y="59" width="50" height="21"/>

@@ -1,22 +1,18 @@
 //
-//  TimelineViewController.m
+//  SearchViewController.m
 //  NepreP
 //
-//  Created by Lsr on 13-11-12.
+//  Created by Lsr on 13-11-13.
 //  Copyright (c) 2013年 Lsr. All rights reserved.
 //
 
-#import "TimelineViewController.h"
-#import "FoodViewController.h"
+#import "SearchViewController.h"
 
-@interface TimelineViewController ()
-
-// Private Properties:
-@property (retain, nonatomic) UIPanGestureRecognizer *navigationBarPanGestureRecognizer;
+@interface SearchViewController ()
 
 @end
 
-@implementation TimelineViewController
+@implementation SearchViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,29 +22,16 @@
     }
     return self;
 }
+
 - (void)viewWillAppear:(BOOL)animated
 {
 	[super viewWillAppear:animated];
     
-    self.title = @"Timeline";
+    self.title = @"Search";
     
 	
-    UIColor *foodColor = [[UIColor alloc]initWithRed:23.0f/255.0f green:50.0f/255.0f blue:10.0f/255.0f alpha:1.0f];
-    
-    
-    
 	if ([self.navigationController.parentViewController respondsToSelector:@selector(revealGesture:)] && [self.navigationController.parentViewController respondsToSelector:@selector(revealToggle:)])
 	{
-		// Check if a UIPanGestureRecognizer already sits atop our NavigationBar.
-		if (![[self.navigationController.navigationBar gestureRecognizers] containsObject:self.navigationBarPanGestureRecognizer])
-		{
-			// If not, allocate one and add it.
-			UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self.navigationController.parentViewController action:@selector(revealGesture:)];
-			self.navigationBarPanGestureRecognizer = panGestureRecognizer;
-			
-			[self.navigationController.view addGestureRecognizer:self.navigationBarPanGestureRecognizer];
-		}
-		
 		// Check if we have a revealButton already.
 		if (![self.navigationItem leftBarButtonItem])
 		{
@@ -61,23 +44,12 @@
 			
             self.navigationItem.leftBarButtonItem = revealButton;
 		}
-        self.navigationController.navigationBar.barTintColor = foodColor;
 	}
-}
-- (IBAction)OpenAccount:(id)sender {
-    [self pushExample];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
 {
 	return (toInterfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-}
-
-
-- (void)pushExample
-{
-	FoodViewController *stubController = [[FoodViewController alloc] init];
-	[self.navigationController pushViewController:stubController animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

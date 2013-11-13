@@ -29,6 +29,8 @@
 - (void)viewWillAppear:(BOOL)animated
 {
 	[super viewWillAppear:animated];
+    
+    self.title = @"spotView";
 	
     UIColor *spotColor = [[UIColor alloc]initWithRed:0.0f/255.0f green:49.0f/255.0f blue:71.0f/255.0f alpha:1.0f];
     
@@ -50,11 +52,10 @@
 		if (![self.navigationItem leftBarButtonItem])
 		{
 			// If not, allocate one and add it.
+            UIImage *menuImage = [UIImage imageNamed:@"menuLine"];
+            
 			UIBarButtonItem *revealButton = [[UIBarButtonItem alloc]
-                                             initWithTitle:NSLocalizedString(@"三", @"三")
-                                             style:UIBarButtonItemStylePlain
-                                             target:self.navigationController.parentViewController
-                                             action:@selector(revealToggle:)];
+                                             initWithImage:menuImage style:UIBarButtonItemStyleBordered target:self.navigationController.parentViewController action:@selector(revealToggle:)];
             
 			
             self.navigationItem.leftBarButtonItem = revealButton;

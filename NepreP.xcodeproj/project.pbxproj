@@ -105,6 +105,12 @@
 		0DB601E3183287280086D82F /* 988245_630610873651056_813343053_n.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DB601A0183287280086D82F /* 988245_630610873651056_813343053_n.jpg */; };
 		0DB601E4183287280086D82F /* 988738_629205100462906_277540723_n.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DB601A1183287280086D82F /* 988738_629205100462906_277540723_n.jpg */; };
 		0DB601E5183287280086D82F /* 998227_601436973235113_591419091_n.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DB601A2183287280086D82F /* 998227_601436973235113_591419091_n.jpg */; };
+		0DB601EA183355D00086D82F /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB601E8183355D00086D82F /* FriendsViewController.m */; };
+		0DB601EB183355D00086D82F /* FriendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DB601E9183355D00086D82F /* FriendsViewController.xib */; };
+		0DB601F1183358D90086D82F /* LikeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB601EF183358D90086D82F /* LikeViewController.m */; };
+		0DB601F2183358D90086D82F /* LikeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DB601F0183358D90086D82F /* LikeViewController.xib */; };
+		0DB601F6183359200086D82F /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB601F4183359200086D82F /* SearchViewController.m */; };
+		0DB601F7183359200086D82F /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DB601F5183359200086D82F /* SearchViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -228,6 +234,15 @@
 		0DB601A0183287280086D82F /* 988245_630610873651056_813343053_n.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 988245_630610873651056_813343053_n.jpg; sourceTree = "<group>"; };
 		0DB601A1183287280086D82F /* 988738_629205100462906_277540723_n.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 988738_629205100462906_277540723_n.jpg; sourceTree = "<group>"; };
 		0DB601A2183287280086D82F /* 998227_601436973235113_591419091_n.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 998227_601436973235113_591419091_n.jpg; sourceTree = "<group>"; };
+		0DB601E7183355D00086D82F /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
+		0DB601E8183355D00086D82F /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
+		0DB601E9183355D00086D82F /* FriendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendsViewController.xib; sourceTree = "<group>"; };
+		0DB601EE183358D90086D82F /* LikeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LikeViewController.h; sourceTree = "<group>"; };
+		0DB601EF183358D90086D82F /* LikeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LikeViewController.m; sourceTree = "<group>"; };
+		0DB601F0183358D90086D82F /* LikeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LikeViewController.xib; sourceTree = "<group>"; };
+		0DB601F3183359200086D82F /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		0DB601F4183359200086D82F /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		0DB601F5183359200086D82F /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -345,6 +360,10 @@
 			children = (
 				0D640D7E1831C9CF00999276 /* RevealController.h */,
 				0D640D7F1831C9CF00999276 /* RevealController.m */,
+				0DB601F8183359720086D82F /* ProfileView */,
+				0DB601ED183358330086D82F /* SearchView */,
+				0DB601EC183358230086D82F /* LikeView */,
+				0DB601E6183355B80086D82F /* FriendsView */,
 				0D640D921832613D00999276 /* TimelineView */,
 				0D640D811831CA1100999276 /* SideBar */,
 				0D640D8C18325B4B00999276 /* SpotView */,
@@ -482,6 +501,43 @@
 			path = sample_photo;
 			sourceTree = "<group>";
 		};
+		0DB601E6183355B80086D82F /* FriendsView */ = {
+			isa = PBXGroup;
+			children = (
+				0DB601E7183355D00086D82F /* FriendsViewController.h */,
+				0DB601E8183355D00086D82F /* FriendsViewController.m */,
+				0DB601E9183355D00086D82F /* FriendsViewController.xib */,
+			);
+			name = FriendsView;
+			sourceTree = "<group>";
+		};
+		0DB601EC183358230086D82F /* LikeView */ = {
+			isa = PBXGroup;
+			children = (
+				0DB601EE183358D90086D82F /* LikeViewController.h */,
+				0DB601EF183358D90086D82F /* LikeViewController.m */,
+				0DB601F0183358D90086D82F /* LikeViewController.xib */,
+			);
+			name = LikeView;
+			sourceTree = "<group>";
+		};
+		0DB601ED183358330086D82F /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				0DB601F3183359200086D82F /* SearchViewController.h */,
+				0DB601F4183359200086D82F /* SearchViewController.m */,
+				0DB601F5183359200086D82F /* SearchViewController.xib */,
+			);
+			name = SearchView;
+			sourceTree = "<group>";
+		};
+		0DB601F8183359720086D82F /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ProfileView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -611,6 +667,7 @@
 				0DB601E5183287280086D82F /* 998227_601436973235113_591419091_n.jpg in Resources */,
 				0DB601D1183287280086D82F /* 329232_113833702066466_881025144_o.jpg in Resources */,
 				0DB601B7183287280086D82F /* 1240520_629205133796236_275133294_n.jpg in Resources */,
+				0DB601EB183355D00086D82F /* FriendsViewController.xib in Resources */,
 				0DB601BC183287280086D82F /* 1379492_514625998626596_665146619_n.jpg in Resources */,
 				0DB601AE183287280086D82F /* 1157590_422148557901644_1495589889_n.jpg in Resources */,
 				0DB601A9183287280086D82F /* 1116118_498257683584658_848536072_o.jpg in Resources */,
@@ -631,9 +688,11 @@
 				0DB601B5183287280086D82F /* 1237057_503038866451976_298075365_n.jpg in Resources */,
 				0DB601D9183287280086D82F /* 528845_391981507557713_824148277_n.jpg in Resources */,
 				0DB601BF183287280086D82F /* 1380759_641644779214332_2075479350_n.jpg in Resources */,
+				0DB601F7183359200086D82F /* SearchViewController.xib in Resources */,
 				0DB601DB183287280086D82F /* 557369_639243632787780_991812089_n.jpg in Resources */,
 				0DB601DD183287280086D82F /* 71608_380846838671180_713119260_n.jpg in Resources */,
 				0D640DA518327C9200999276 /* avatar.png in Resources */,
+				0DB601F2183358D90086D82F /* LikeViewController.xib in Resources */,
 				0DB601D5183287280086D82F /* 465398_359330984143840_1206735844_o.jpg in Resources */,
 				0DB601C5183287280086D82F /* 1385508_629173823799367_603033384_n.jpg in Resources */,
 				0DB601D4183287280086D82F /* 458643_273259889417773_318502739_o.jpg in Resources */,
@@ -657,11 +716,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D640D571831C8C800999276 /* ViewController.m in Sources */,
+				0DB601F6183359200086D82F /* SearchViewController.m in Sources */,
 				0D640D801831C9CF00999276 /* RevealController.m in Sources */,
 				0D640D961832615600999276 /* TimelineViewController.m in Sources */,
 				0D640D9A1832767900999276 /* UINavigationBar+MyNavigationBar.m in Sources */,
 				0D640D851831CA4F00999276 /* SidebarViewController.m in Sources */,
 				0D640D781831C8F800999276 /* ZUUIRevealController.m in Sources */,
+				0DB601EA183355D00086D82F /* FriendsViewController.m in Sources */,
+				0DB601F1183358D90086D82F /* LikeViewController.m in Sources */,
 				0D640D9018325B6800999276 /* SpotViewController.m in Sources */,
 				0D640D511831C8C800999276 /* AppDelegate.m in Sources */,
 				0D640D8A1831CBC500999276 /* FoodViewController.m in Sources */,
