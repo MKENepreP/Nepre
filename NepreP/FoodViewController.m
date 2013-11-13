@@ -68,10 +68,13 @@
     
         self.navigationController.navigationBar.barTintColor = foodColor;
         self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
-        
 	}
+    
 }
 
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
 
 
 - (IBAction)OpenAccount:(id)sender {
@@ -89,6 +92,8 @@
 	SpotViewController *stubController = [[SpotViewController alloc] init];
 	[self.navigationController pushViewController:stubController animated:YES];
 }
+
+
 
 - (void)didReceiveMemoryWarning
 {

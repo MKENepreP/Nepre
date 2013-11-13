@@ -510,8 +510,6 @@
 {
 	[super viewDidLoad];
     
-    
-    self.navigationController.navigationBar.tintColor = [UIColor redColor];
 	
 	self.frontView = [[UIView alloc] initWithFrame:self.view.bounds];
 	self.rearView = [[UIView alloc] initWithFrame:self.view.bounds];
@@ -541,7 +539,14 @@
 	self.currentFrontViewPosition = FrontViewPositionLeft;
 	
 	[self _addRearViewControllerToHierarchy:self.rearViewController];
-	[self _addFrontViewControllerToHierarchy:self.frontViewController];	
+	[self _addFrontViewControllerToHierarchy:self.frontViewController];
+	
+    //aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    //update status bar appearance
+}
+
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
 }
 
 - (void)viewDidUnload
